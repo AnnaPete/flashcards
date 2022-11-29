@@ -4,8 +4,8 @@ const Card = require("../src/Card");
 const Turn = require('../src/Turn');
 
 describe('Turn', function () {
-  let card1, card2, card3;
-  let turn1, turn2, turn3, turn4;
+  let card1, card2, card3
+  let turn1, turn2, turn3, turn4
 
   this.beforeEach(() => {
     card1 = new Card(7, 'What special thing do Americans do on the Fourth of July?', ['eat hamburgers', 'go shopping', 'watch fireworks'], 'watch fireworks')
@@ -21,6 +21,7 @@ describe('Turn', function () {
   it('should have an argument of a string that represents a user\s guess to the question', function () {
    
     expect(turn1.guess).to.equal('watch fireworks')
+    expect(turn2.guess).to.equal('Ham')
   })
 
   it('should have an argument of a card object for the current card in play', function () {
