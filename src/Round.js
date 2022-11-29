@@ -34,6 +34,5 @@ class Round {
     console.log(endMessage)
     return endMessage
   }
-
 }
 module.exports = Round
