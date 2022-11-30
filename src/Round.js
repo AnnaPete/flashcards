@@ -32,7 +32,6 @@ class Round {
     var percentCorrect = this.calculatePercentCorrect()
     var endMessage =  `** Round over! ** You answered ${percentCorrect}% of the questions correctly!`
     console.log(endMessage)
-    return endMessage
   }
 }
 module.exports = Round
