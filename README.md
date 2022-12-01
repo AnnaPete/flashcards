@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This game can be played completely in your device's Terminal! When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards!
+This game can be played completely in your device's Terminal! When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through two entire decks of cards!
 
 ## Preview
 
@@ -30,5 +30,6 @@ In order to start the game, type this command into your Terminal:
 
 node index.js
 
+Note: There are two different data sets to play with. To play the other set, please replace "lotrData" with "prototypeData" inside of the index.js file on line 9.
 
 Enjoy!
