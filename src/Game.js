@@ -3,11 +3,13 @@ const Deck = require('./Deck');
 const Round = require('./Round');
 const data = require('./data');
 const prototypeQuestions = data.prototypeData;
+const {lotrData} = require('./new-game-data')
 const util = require('./util');
 
 class Game {
-  constructor(round) {
-    this.currentRound = round
+  constructor(dataSet) {
+    this.currentRound = null
+    this.dataSet = dataSet
   }
 
   printMessage(deck, round) {
@@ -20,7 +22,7 @@ class Game {
   }
 
   start() {
-    var cards = prototypeQuestions.map(question => {
+    var cards = this.dataSet.map(question => {
       return new Card(question.id, question.question, question.answers, question.correctAnswer)
     })
     var deck = new Deck(cards)
